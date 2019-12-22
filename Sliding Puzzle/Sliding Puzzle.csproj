@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{27B4FF72-C675-4174-B198-B9887399EA72}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Sliding_Puzzle</RootNamespace>
+    <AssemblyName>Sliding Puzzle</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resourses\1.jpg" />
+    <Resource Include="Resourses\10.jpg" />
+    <Resource Include="Resourses\11.jpg" />
+    <Resource Include="Resourses\12..jpg" />
+    <Resource Include="Resourses\13.jpg" />
+    <Resource Include="Resourses\14.jpg" />
+    <Resource Include="Resourses\15.jpg" />
+    <Resource Include="Resourses\2.jpg" />
+    <Resource Include="Resourses\3.jpg" />
+    <Resource Include="Resourses\4.jpg" />
+    <Resource Include="Resourses\5.jpg" />
+    <Resource Include="Resourses\6.jpg" />
+    <Resource Include="Resourses\7.jpg" />
+    <Resource Include="Resourses\8.jpg" />
+    <Resource Include="Resourses\9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resourses\yaqHc9Wtqxs_01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resourses\yaqHc9Wtqxs_02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resourses\yaqHc9Wtqxs_03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resourses\yaqHc9Wtqxs_04.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resourses\yaqHc9Wtqxs_05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resourses\yaqHc9Wtqxs_06.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resourses\yaqHc9Wtqxs_07.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="yaqHc9Wtqxs_08.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resourses\yaqHc9Wtqxs_08.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resourses\yaqHc9Wtqxs_09.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resourses\jVccW_79pMY_01.jpg" />
+    <Resource Include="Resourses\jVccW_79pMY_02.jpg" />
+    <Resource Include="Resourses\jVccW_79pMY_03.jpg" />
+    <Resource Include="Resourses\jVccW_79pMY_04.jpg" />
+    <Resource Include="Resourses\jVccW_79pMY_05.jpg" />
+    <Resource Include="Resourses\jVccW_79pMY_06.jpg" />
+    <Resource Include="Resourses\jVccW_79pMY_07.jpg" />
+    <Resource Include="Resourses\jVccW_79pMY_08.jpg" />
+    <Resource Include="Resourses\jVccW_79pMY_09.jpg" />
+    <Resource Include="Resourses\jVccW_79pMY_10.jpg" />
+    <Resource Include="Resourses\jVccW_79pMY_11.jpg" />
+    <Resource Include="Resourses\jVccW_79pMY_12.jpg" />
+    <Resource Include="Resourses\jVccW_79pMY_13.jpg" />
+    <Resource Include="Resourses\jVccW_79pMY_14.jpg" />
+    <Resource Include="Resourses\jVccW_79pMY_15.jpg" />
+    <Resource Include="Resourses\jVccW_79pMY_16.jpg" />
+    <Resource Include="Resourses\jVccW_79pMY_17.jpg" />
+    <Resource Include="Resourses\jVccW_79pMY_18.jpg" />
+    <Resource Include="Resourses\jVccW_79pMY_19.jpg" />
+    <Resource Include="Resourses\jVccW_79pMY_20.jpg" />
+    <Resource Include="Resourses\jVccW_79pMY_21.jpg" />
+    <Resource Include="Resourses\jVccW_79pMY_22.jpg" />
+    <Resource Include="Resourses\jVccW_79pMY_23.jpg" />
+    <Resource Include="Resourses\jVccW_79pMY_24.jpg" />
+    <Resource Include="Resourses\jVccW_79pMY_25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="TextFile1.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

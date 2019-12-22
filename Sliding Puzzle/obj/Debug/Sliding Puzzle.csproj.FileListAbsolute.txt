@@ -1,0 +1,15 @@
+C:\Users\sulee\source\repos\Sliding Puzzle\Sliding Puzzle\bin\Debug\Sliding Puzzle.exe.config
+C:\Users\sulee\source\repos\Sliding Puzzle\Sliding Puzzle\bin\Debug\Sliding Puzzle.exe
+C:\Users\sulee\source\repos\Sliding Puzzle\Sliding Puzzle\bin\Debug\Sliding Puzzle.pdb
+C:\Users\sulee\source\repos\Sliding Puzzle\Sliding Puzzle\obj\Debug\Sliding Puzzle.csprojAssemblyReference.cache
+C:\Users\sulee\source\repos\Sliding Puzzle\Sliding Puzzle\obj\Debug\MainWindow.g.cs
+C:\Users\sulee\source\repos\Sliding Puzzle\Sliding Puzzle\obj\Debug\App.g.cs
+C:\Users\sulee\source\repos\Sliding Puzzle\Sliding Puzzle\obj\Debug\Sliding Puzzle_MarkupCompile.cache
+C:\Users\sulee\source\repos\Sliding Puzzle\Sliding Puzzle\obj\Debug\Sliding Puzzle_MarkupCompile.lref
+C:\Users\sulee\source\repos\Sliding Puzzle\Sliding Puzzle\obj\Debug\MainWindow.baml
+C:\Users\sulee\source\repos\Sliding Puzzle\Sliding Puzzle\obj\Debug\Sliding Puzzle.g.resources
+C:\Users\sulee\source\repos\Sliding Puzzle\Sliding Puzzle\obj\Debug\Sliding_Puzzle.Properties.Resources.resources
+C:\Users\sulee\source\repos\Sliding Puzzle\Sliding Puzzle\obj\Debug\Sliding Puzzle.csproj.GenerateResource.cache
+C:\Users\sulee\source\repos\Sliding Puzzle\Sliding Puzzle\obj\Debug\Sliding Puzzle.csproj.CoreCompileInputs.cache
+C:\Users\sulee\source\repos\Sliding Puzzle\Sliding Puzzle\obj\Debug\Sliding Puzzle.exe
+C:\Users\sulee\source\repos\Sliding Puzzle\Sliding Puzzle\obj\Debug\Sliding Puzzle.pdb

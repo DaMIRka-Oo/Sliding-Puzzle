@@ -1,0 +1,243 @@
+﻿ /*case "Space":
+                    if (!blinking)
+                    {                       
+                        da.From = 1;
+                        da.To = 0;
+                        da.Duration = new Duration(TimeSpan.FromSeconds(1));
+                        da.AutoReverse = true;
+                        da.RepeatBehavior = RepeatBehavior.Forever;
+                        //da.RepeatBehavior=new RepeatBehavior(3);
+                        myBorder.BeginAnimation(OpacityProperty, da);
+                        blinking = true;
+                    }
+                    else
+                    {
+                        da.RepeatBehavior = new RepeatBehavior(0);
+                        myBorder.BeginAnimation(OpacityProperty, da);
+                        blinking = false;
+                    }
+                    
+                    break;
+                case "Right":
+                    if (leftBorder >= 0 & leftBorder <= width * (pointer - 2))
+                    {
+                        if (blinking)
+                        {
+
+                            double yborder = Canvas.GetTop(myBorder);
+                            double xborder = Canvas.GetLeft(myBorder);
+                            
+                            for (int i = 0; i < limit; i++)
+                            {
+                                
+                                double yrectangle = Canvas.GetTop(rectangle[i]);
+                                double xrectangle = Canvas.GetLeft(rectangle[i]);
+                                
+
+                                if (yborder == yrectangle & xborder == xrectangle)
+                                {
+                                    bool spaceDirection = true;
+
+                                    
+                                    for (int j = 0; j < limit; j++)
+                                    {
+                                        double yrect = Canvas.GetTop(rectangle[j]);
+                                        double xrect = Canvas.GetLeft(rectangle[j]);
+                                        
+                                        
+                                        if (xrect == xrectangle + width & yrect == yrectangle)
+                                        {
+                                            spaceDirection = false;
+                                            break;
+                                        }
+                                    }
+                                    if (spaceDirection)
+                                    {
+                                        leftBorder += width;
+                                        Canvas.SetLeft(myBorder, leftBorder);
+                                        Canvas.SetLeft(rectangle[i], leftBorder);
+                                    }
+
+                                    break;
+                                }
+                            }
+
+
+                        }
+                        else
+                        {
+                            leftBorder += width;
+                            Canvas.SetLeft(myBorder, leftBorder);
+                        }
+                    }
+                    
+                                    
+                    break;
+                case "Left":
+                    /*if (leftBorder >= 80 & leftBorder <= 240)
+                    {
+                        leftBorder -= 80;
+                        Canvas.SetLeft(myBorder, leftBorder);
+                    }
+                    if (leftBorder >= width & leftBorder <= width * (pointer - 1))
+                    {
+                        if (blinking)
+                        {
+
+                            double yborder = Canvas.GetTop(myBorder);
+                            double xborder = Canvas.GetLeft(myBorder);
+                            
+                            for (int i = 0; i < limit; i++)
+                            {
+                                
+                                double yrectangle = Canvas.GetTop(rectangle[i]);
+                                double xrectangle = Canvas.GetLeft(rectangle[i]);
+                                
+
+                                if (yborder == yrectangle & xborder == xrectangle)
+                                {
+                                    bool spaceDirection = true;
+
+                                    
+                                    for (int j = 0; j < limit; j++)
+                                    {
+                                        double yrect = Canvas.GetTop(rectangle[j]);
+                                        double xrect = Canvas.GetLeft(rectangle[j]);
+                                        
+                                        
+                                        if (xrect == xrectangle - width & yrect == yrectangle)
+                                        {
+                                            spaceDirection = false;
+                                            break;
+                                        }
+                                    }
+                                    if (spaceDirection)
+                                    {
+                                        leftBorder -= width;
+                                        Canvas.SetLeft(myBorder, leftBorder);
+                                        Canvas.SetLeft(rectangle[i], leftBorder);
+                                    }
+
+                                    break;
+                                }
+                            }
+
+
+                        }
+                        else
+                        {
+                            leftBorder -= width;
+                            Canvas.SetLeft(myBorder, leftBorder);
+                        }
+                    }
+
+                    break;
+                case "Up":
+                    if (topBorder >= height & topBorder <= height * (pointer - 1))
+                    {
+                        if (blinking)
+                        {
+
+                            double yborder = Canvas.GetTop(myBorder);
+                            double xborder = Canvas.GetLeft(myBorder);
+                            
+                            for (int i = 0; i < limit; i++)
+                            {
+                                
+                                double yrectangle = Canvas.GetTop(rectangle[i]);
+                                double xrectangle = Canvas.GetLeft(rectangle[i]);
+                                
+
+                                if (yborder == yrectangle & xborder == xrectangle)
+                                {
+                                    bool spaceDirection = true;
+
+                                    
+                                    for (int j = 0; j < limit; j++)
+                                    {
+                                        double yrect = Canvas.GetTop(rectangle[j]);
+                                        double xrect = Canvas.GetLeft(rectangle[j]);
+
+                                        
+                                        if (xrect == xrectangle & yrect == yrectangle - height)
+                                        {
+                                            spaceDirection = false;
+                                            break;
+                                        }
+                                    }
+                                    if (spaceDirection)
+                                    {
+                                        topBorder -= height;
+                                        Canvas.SetTop(myBorder, topBorder);
+                                        Canvas.SetTop(rectangle[i], topBorder);
+                                    }
+
+                                    break;
+                                }
+                            }
+
+
+                        }
+                        else
+                        {
+                            topBorder -= height;
+                            Canvas.SetTop(myBorder, topBorder);
+                        }
+                    }
+                                      
+                    break;
+                case "Down":
+                    if (topBorder >= 0 & topBorder <= height * (pointer - 2))
+                    {
+                        if (blinking)
+                        {
+
+                            double yborder = Canvas.GetTop(myBorder);
+                            double xborder = Canvas.GetLeft(myBorder);
+                            
+                            for (int i = 0; i < limit; i++)
+                            {
+                                
+                                double yrectangle = Canvas.GetTop(rectangle[i]);
+                                double xrectangle = Canvas.GetLeft(rectangle[i]);
+                                
+
+                                if (xborder == xrectangle & yborder == yrectangle)
+                                {
+                                    bool spaceDirection = true;
+
+                                    
+                                    for (int j = 0; j < limit; j++)
+                                    {
+                                        double yrect = Canvas.GetTop(rectangle[j]);
+                                        double xrect = Canvas.GetLeft(rectangle[j]);
+
+                                        
+                                        if (xrect == xrectangle & yrect == yrectangle + height)
+                                        {
+                                            spaceDirection = false;
+                                            break;
+                                        }
+                                    }
+                                    if (spaceDirection)
+                                    {
+                                        topBorder += height;
+                                        Canvas.SetTop(myBorder, topBorder);
+                                        Canvas.SetTop(rectangle[i], topBorder);
+                                    }
+
+                                    break;
+                                }
+                            }
+
+
+                        }
+                        else
+                        {
+                            topBorder += height;
+                            Canvas.SetTop(myBorder, topBorder);
+                        }
+                    }
+                    
+                       
+                    break;*/
